@@ -14,3 +14,8 @@ var result =
 	second;
 
 console.log(result);
+
+/*
+(method) String.concat(...strings: string[]): string
+ 답: year.concat('/', month, '/', day, ' ', hour, ':', minute, ':', second);
+*/
