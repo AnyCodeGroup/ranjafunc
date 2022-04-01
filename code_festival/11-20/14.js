@@ -1,5 +1,5 @@
 function solution(n) {
-	return n % 2 === 1 ? "짝" : n;
+	return n % 3 === 1 ? "짝" : n;
 }
 
 function getRandom() {

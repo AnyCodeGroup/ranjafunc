@@ -4,7 +4,7 @@ function solution(name, score) {
 	const obj = {};
 
 	for (let i = 0; i < names.length; i++) {
-		obj[names[i]] = parseInt(scores[i]);
+		obj[names[i]] = parseInt(scores[i], 10);
 	}
 
 	return obj;
