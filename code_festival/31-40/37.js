@@ -23,3 +23,17 @@ function solution(votes) {
 }
 
 console.log(solution("원범 원범 혜선 혜선 혜선 혜선 김진 김진"));
+
+/**
+let result = {};
+let winner = "";
+
+for(let index in array){
+  let val = array[index];
+  result[val] = result[val] === undefined ? 1 : result[val] = result[val] + 1;
+}
+
+winner = Object.keys(result).reduce(function(a, b){
+  return result[a] > result[b] ? a : b
+});
+ */

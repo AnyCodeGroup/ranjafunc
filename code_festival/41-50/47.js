@@ -19,3 +19,11 @@ function solution(obj) {
 }
 
 console.log(solution(people));
+
+/*
+let result = new Set();
+for (let key in people) {
+  result.add(people[key]);
+}
+console.log(result.size); //size 는 set 객체 내 값의 개수를 반환합니다.
+*/

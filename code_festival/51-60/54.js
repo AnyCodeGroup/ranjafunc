@@ -1,8 +1,8 @@
 function solution(nums) {
 	const data = nums.split(" ").map((v) => parseInt(v, 10));
 	let result = true;
-	for (let i = 0; i < data.length; i++) {
-		if (i !== data.length - 1 && data[i] + 1 !== data[i + 1]) {
+	for (let i = 0; i < data.length - 1; i++) {
+		if (data[i] + 1 !== data[i + 1]) {
 			result = false;
 			break;
 		}

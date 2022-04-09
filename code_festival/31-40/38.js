@@ -22,3 +22,30 @@ function solution(nums) {
 }
 
 console.log(solution("97 86 75 66 55 97 85 97 97 95"));
+
+/* 
+const scores = prompt('점수입력').split(' ').map(function(n){
+  return parseInt(n, 10);
+});
+
+scores.sort((a, b) => {
+  return a-b;
+});
+
+let count = 0;
+let arr = [];
+
+간단히 생각할 걸 그랫다
+
+전체 1번 반복문돌리면 해결되는거엿다..
+
+while (arr.length < 3) {
+  let n = scores.pop();
+  if (!arr.includes(n)){
+    arr.push(n);
+  }
+  count += 1;
+}
+
+console.log(count);
+*/

@@ -15,7 +15,6 @@ function findSimliar() {
 		if (key[0] === "korea") continue;
 
 		const diff = Math.abs(nationWidth["korea"] - key[1]);
-		console.log(diff);
 		if (min === null) {
 			min = diff;
 			result = key[0];
@@ -28,3 +27,26 @@ function findSimliar() {
 }
 
 console.log(findSimliar());
+
+/**
+ const w = nationWidth['korea'];
+
+delete nationWidth['korea'];
+
+const entry = Object.entries(nationWidth);
+const values = Object.values(nationWidth);
+
+//gap에 최댓값 저장
+let gap = Math.max.apply(null, values);
+let item = [];
+
+for (let i in entry){
+  if (gap > Math.abs(entry[i][1] - w)){
+    gap = Math.abs(entry[i][1] - w);
+    item = entry[i];
+  }
+}
+
+console.log(item[0], item[1] - w);
+ 
+ */
